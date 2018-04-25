@@ -1,0 +1,56 @@
+#gameWindow{
+	position: relative;
+	width: 800px;
+	height: 400px;
+	margin: 0 auto;
+	border: 1px silver solid;
+	overflow: hidden;
+}
+		
+#sky, #mountains, #trees, #mouse{
+	position: absolute;
+}
+
+#sky{ z-index: 1; }
+#mountains{ z-index: 2; }
+#trees{ z-index: 3; }
+#mouse{ z-index: 4; }
+
+.flip-H{
+	-moz-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	transform: scaleX(-1);
+	-ms-filter: fliph;
+	filter: fliph;
+}
+
+#text {
+	display: block;
+	font-size: 40px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#egg {
+	margin-top: 20px;
+	text-align: center;
+	font-size: 25px;
+}
+
+#hint {
+	margin-top: 5px;
+	text-align: center;
+	font-size: 15px;
+}
+
+#end {
+	display: none;
+	text-align: center;
+	font-size: 40px;
+}
+
+#endBut {
+	display: none;
+	text-align: center;
+}
